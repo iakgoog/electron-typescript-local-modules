@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+      .display-panel {
+        font-size: 2rem;
+        font-weight: bold;
+        max-width: 90%;
+        color: fuchsia;
+      }
+    </style>
+  </head>
+  <body>
+    <label>Please fill in number A: </label><input type="number" id="value-a" /><br />
+    <label>Please fill in number B: </label><input type="number" id="value-b" /><br />
+    <button id="action-add">Hit me to show SUM of those values</button>
+    <p id="display-sum" class="display-panel"></p>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./dist/renderer.js')
+  </script>
+</html>
